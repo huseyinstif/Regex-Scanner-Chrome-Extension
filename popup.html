@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Regex Pattern Finder</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body, html {
+      width: 400px;
+      height: 600px;
+    }
+    .container {
+      margin-top: 10px;
+    }
+    .tab-content > div {
+      display: none;
+    }
+    .tab-content > div.active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <ul class="nav nav-tabs" role="tablist">
+    <li class="nav-item">
+        <a class="nav-link active" data-target="#find" id="findTab">Find</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" data-target="#manage" id="manageTab">Manage</a>
+    </li>
+  </ul>
+  <div class="tab-content">
+    <div id="find" class="tab-pane active">
+      <div id="find-results" class="mt-3"></div>
+    </div>
+    <div id="manage" class="tab-pane">
+      <input type="text" id="regexName" placeholder="Name" class="form-control my-2">
+      <input type="text" id="regexPattern" placeholder="Regex Pattern" class="form-control my-2">
+      <button class="btn btn-primary" id="saveButton">Save</button>
+      <div id="savedRegexes" class="mt-3"></div>
+    </div>
+  </div>
+</div>
+
+<script src="popup.js"></script>
+</body>
+</html>

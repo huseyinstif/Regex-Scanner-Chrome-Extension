@@ -1,0 +1,8 @@
+body, html {
+  min-width: 400px;
+  min-height: 600px;
+}
+
+.container {
+  margin-top: 10px;
+}
